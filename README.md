@@ -1,8 +1,8 @@
-osm_imports_preparations
+# OpenStreetMap Imports preparations
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-==============================
 
 
 This is a proof of concept and a pet project for learning python while preparing data for importing it to OpenStreetMap. Although I will start small (importing trees from Barcelona city council), I aim to set the foundations for adding other types of imports that may (or may not) be added in the future.
