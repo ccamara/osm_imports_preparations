@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ccamara",
+      "name": "Carlos Cámara",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/706549?v=4",
+      "profile": "http://carloscamara.es",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "osm_imports_preparations",
+  "projectOwner": "ccamara",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
