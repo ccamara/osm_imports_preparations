@@ -1,0 +1,10 @@
+name: osm_imports_preparations
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - pip
+  - spyder
+  - python-wget
+
