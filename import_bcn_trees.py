@@ -3,7 +3,7 @@
 import pandas as pd
 import wget
 
-import build_features
+from src.features import bcn_trees
 
 
 # %% Data download.
@@ -17,37 +17,4 @@ wget.download(url, 'data/raw/arbrat_viari.csv')
 
 bcn_arbrat_viari_raw = pd.read_csv('data/raw/arbrat_viari.csv')
 
-bcn_trees = build_features.trees_data_munging(bcn_arbrat_viari_raw)
-
-
-# %%% Test
-
-# Select columns.
-df = bcn_arbrat_viari_raw[['LATITUD_WGS84',
-                    'LONGITUD_WGS84',
-                    'NOM_CIENTIFIC',
-                    'NOM_CASTELLA',
-                    'NOM_CATALA',
-                    'DATA_PLANTACIO',
-                    'CATEGORIA_ARBRAT',
-                    ]]
-
-# Rename
-df = df.rename(columns={'NOM_CIENTIFIC': 'species',
-                        'NOM_CASTELLA': 'species:es',
-                        'NOM_CATALA': 'species:ca',
-                        'DATA_PLANTACIO': 'planted_date'})
-
-
-# @TODO: Populate leaf_cycle column according to species
-# https://wiki.openstreetmap.org/wiki/Key:leaf_cycle
-
-# @TODO: convert 'CATEGORIA' into height or diameter, according to city
-# council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf
-
-# @TODO: Tag tree pits for accessibility purposes.
-
-# @TODO: Consider importing city council's IDs for updating purposes.
-
-# Create a source column with "Opendata Ajuntament Barcelona"
-df['source'] = "Opendata Ajuntament de Barcelona"
+bcn_trees_df = bcn_trees.data_munging(bcn_arbrat_viari_raw)
