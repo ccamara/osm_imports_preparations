@@ -3,8 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - mkdocs
   - pandas
   - pip
   - spyder
   - python-wget
+  - pip:
+      - keras-autodoc
 
