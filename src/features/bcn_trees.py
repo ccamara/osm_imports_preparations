@@ -13,14 +13,18 @@ def data_download(url, filename):
     wget.download(url, 'data/raw/' + filename + '.csv')
 
 
-def data_munging(df):
+def data_munging(df, file_name):
     """Cleans and prepares data from Barcelona City Council Opendata
     for importing trees' information into OSM, provided a dataframe.
+    Stores the resulting dataframe into a csv file.
 
     Parameters
     ----------
     df : DataFrame
         The Raw Dataframe we want to use import into OSM.
+
+    file_name : String
+        The name we want to give to the resulting csv export.
 
 
     Returns
@@ -30,7 +34,7 @@ def data_munging(df):
 
     """
 
-    print('Loading...' + str(df))
+    print('Loading dataframe...')
 
     # Select columns.
     df = df[['LATITUD_WGS84',
@@ -47,6 +51,11 @@ def data_munging(df):
                             'NOM_CATALA': 'species:ca',
                             'DATA_PLANTACIO': 'planted_date'})
 
+    # Convert columns into categories (R's factors)
+    # https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html
+    df["species"] = df["species"].astype("category")
+    df["species:ca"] = df["species:ca"].astype("category")
+
     # @TODO: Populate leaf_cycle column according to species
     # https://wiki.openstreetmap.org/wiki/Key:leaf_cycle
 
@@ -59,5 +68,8 @@ def data_munging(df):
 
     # Create a source column with "Opendata Ajuntament Barcelona"
     df['source'] = "Opendata Ajuntament de Barcelona"
+
+    df.to_csv('data/processed/' + file_name + '.csv', sep='\t',
+              encoding='utf-8')
 
     return(df)
