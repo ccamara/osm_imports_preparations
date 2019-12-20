@@ -1,0 +1,18 @@
+site_name: "OSM Imports' preparations"
+site_description: "This is a proof of concept and a pet project for learning python while preparing data for importing it to OpenStreetMap. Although I will start small (importing trees from Barcelona city council), I aim to set the foundations for adding other types of imports that may (or may not) be added in the future."
+site_author: "Carlos Cámara"
+
+repo_url: https://github.com/ccamara/osm_imports_preparations
+
+nav:
+    - Home: index.md
+    - User Guide:
+        - bcn_trees: bcn_trees.md
+    - Bug Tracker: https://github.com/ccamara/osm_imports_preparations/issues
+
+# theme:
+#     name: readthedocs
+
+markdown_extensions:
+    - toc:
+        permalink: True
