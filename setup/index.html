@@ -278,6 +278,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#updating-documentation" class="md-nav__link">
+    Updating Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editing-an-existing-md-file" class="md-nav__link">
+    Editing an existing .md file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-md-file" class="md-nav__link">
+    Creating a new .md file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -407,6 +434,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#updating-documentation" class="md-nav__link">
+    Updating Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editing-an-existing-md-file" class="md-nav__link">
+    Editing an existing .md file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-md-file" class="md-nav__link">
+    Creating a new .md file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -494,6 +548,32 @@
 </code></pre>
 <hr />
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+<h2 id="updating-documentation">Updating Documentation<a class="headerlink" href="#updating-documentation" title="Permanent link">&para;</a></h2>
+<p>Documentation is generated using <a href="https://www.mkdocs.org">MkDocs</a> with some plugins installed (they will all be installed after creating the virtual environment). The live documentation site retrieves two type of documentation:</p>
+<ul>
+<li>Static, manually created <code>*.md</code> files: these documents are manually created and stored in <code>/docs</code> folder.</li>
+<li>Automatically generated (API): these documents are generated using <a href="https://gabrieldemarmiesse.github.io/keras-autodoc/"><code>keras-audoc</code></a>, which reads inline functions' comments and generates files according to <code>autogen.py</code>. (currently not working -visit: https://github.com/keras-team/keras-autodoc/issues/68)</li>
+</ul>
+<p>In turn, menu (amongst other things) is defined in <code>mkdocs.yml</code> file.</p>
+<p>In order to improve documentation you can do the following:</p>
+<h3 id="editing-an-existing-md-file">Editing an existing <code>.md</code> file<a class="headerlink" href="#editing-an-existing-md-file" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the desired <code>.md</code> file within <code>/docs</code> folder and edit it normally.</li>
+<li>Save your changes</li>
+<li>Run <code>mkdocs serve</code> and watch your changes in <code>http://127.0.0.1:8000</code></li>
+<li>Once, you're done editing, press <code>CTRL-C</code> to stop the server</li>
+<li>If you're happy with your changes, run <code>mkdocs gh-deploy</code>: a site will be generated and pushed to <code>gh-pages</code> branch within this repo. Soon after it will be visible in the live site.</li>
+</ol>
+<h3 id="creating-a-new-md-file">Creating a new <code>.md</code> file<a class="headerlink" href="#creating-a-new-md-file" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create a <code>.md</code> file within <code>/docs</code> folder and edit it normally.</li>
+<li>Save your changes</li>
+<li>Edit <code>mkdocs.yml</code> and add a menu entry pointing to the newly created file.</li>
+<li>Run <code>mkdocs serve</code> and watch your changes in <code>http://127.0.0.1:8000</code></li>
+<li>Once, you're done editing, press <code>CTRL-C</code> to stop the server</li>
+<li>If you're happy with your changes, run <code>mkdocs gh-deploy</code>: a site will be generated and pushed to <code>gh-pages</code> branch within this repo. Soon after it will be visible in the live site.</li>
+</ol>
                 
                   
                 

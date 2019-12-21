@@ -5,7 +5,6 @@ from keras_autodoc import DocumentationGenerator
 from src.features import bcn_trees
 
 
-
 pages = {
     'api_bcn_trees.md': [
         'bcn_trees.data_download',
