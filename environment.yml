@@ -10,4 +10,5 @@ dependencies:
   - python-wget
   - pip:
       - keras-autodoc
+      - mkdocs-material
 

@@ -2,11 +2,14 @@
 
 from keras_autodoc import DocumentationGenerator
 
+from src.features import bcn_trees
+
+
 
 pages = {
-    'bcn_trees.md': [
-        'features.data_download',
-        'features.data_munging']
+    'api_bcn_trees.md': [
+        'bcn_trees.data_download',
+        'bcn_trees.data_munging']
     }
 
 doc_generator = DocumentationGenerator(pages)

@@ -18,6 +18,8 @@ def data_munging(df, file_name):
     for importing trees' information into OSM, provided a dataframe.
     Stores the resulting dataframe into a csv file.
 
+    Tagging conversion has been made following [Tag:natural=tree](https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree) in OSM Wiki.
+
     Parameters
     ----------
     df : DataFrame
@@ -45,6 +47,10 @@ def data_munging(df, file_name):
              'DATA_PLANTACIO',
              'CATEGORIA_ARBRAT',
              ]]
+
+    # Tagging conversion using https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree
+    # as a reference
+
     # Rename
     df = df.rename(columns={'NOM_CIENTIFIC': 'species',
                             'NOM_CASTELLA': 'species:es',

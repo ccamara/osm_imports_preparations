@@ -4,15 +4,24 @@ site_author: "Carlos Cámara"
 
 repo_url: https://github.com/ccamara/osm_imports_preparations
 
+theme:
+  # favicon: '/img/favicon.png'
+  # logo: '/img/logo_white.svg'
+  name: 'material'
+  palette:
+    primary: 'green'
+    accent: 'red'
+
 nav:
     - Home: index.md
-    - User Guide:
-        - bcn_trees: bcn_trees.md
+    - Project Setup: setup.md
+    - Documentation:
+        - Barcelona's Trees: bcn_trees.md
+    - API:
+        - API bcn_tres: functions_bcn_trees.md
     - Bug Tracker: https://github.com/ccamara/osm_imports_preparations/issues
 
-# theme:
-#     name: readthedocs
 
 markdown_extensions:
     - toc:
-        permalink: True
+        permalink: true
