@@ -15,8 +15,8 @@ theme:
 nav:
     - Home: index.md
     - Project Setup: setup.md
-    - Documentation:
-        - Barcelona's Trees: bcn_trees.md
+    - Imports Documentation:
+        - Barcelona's Trees Import: bcn_trees.md
     - API:
         - API bcn_tres: functions_bcn_trees.md
     - Bug Tracker: https://github.com/ccamara/osm_imports_preparations/issues

@@ -77,4 +77,6 @@ We will use the following changeset tags:
 
 ## References
 
-* Procedimiento para preparar importaciones (in Spanish): https://github.com/keras-team/keras-autodoc/issues/68
+* [Import Guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines)
+* [Procedimiento para preparar importaciones](https://wiki.openstreetmap.org/wiki/ES:Importaci%C3%B3n/Directrices) (in Spanish)
+* [Sample import documentation project](https://wiki.openstreetmap.org/wiki/Import_information_and_care_points_for_women_and_LGTBI_collectives_in_Catalunya) (thanks Lanxana!)
