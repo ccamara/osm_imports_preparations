@@ -73,3 +73,8 @@ We will use the following changeset tags:
 * source=Ajuntament de Barcelona
 * source:date=* the same that in the dataset
 * url= (this page)
+
+
+## References
+
+* Procedimiento para preparar importaciones (in Spanish): https://github.com/keras-team/keras-autodoc/issues/68
