@@ -9,7 +9,7 @@ This is a proof of concept and a pet project for learning python while preparing
 
 ## Documentation
 
-Project's documentation can be found in `docs` folder and a live version, generated using [mkdocs](https://www.mkdocs.org/) can be found in
+Project's documentation can be found in `docs` folder and a live version, generated using [mkdocs](https://www.mkdocs.org/) can be found [here](https://ccamara.github.io/osm_imports_preparations)
 
 
 
