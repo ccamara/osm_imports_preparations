@@ -5,8 +5,9 @@ site_author: "Carlos Cámara"
 repo_url: https://github.com/ccamara/osm_imports_preparations
 
 theme:
-  # favicon: '/img/favicon.png'
-  # logo: '/img/logo_white.svg'
+  favicon: '/img/map-24px.svg'
+  logo:
+    icon: 'map'
   name: 'material'
   palette:
     primary: 'green'
