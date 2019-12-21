@@ -1,1 +1,1 @@
-/home/ccamara/www/osm_imports_preparations/README.md
+../README.md
