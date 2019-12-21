@@ -81,3 +81,32 @@ conda env create -f environment.yml
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+## Updating Documentation
+
+Documentation is generated using [MkDocs](https://www.mkdocs.org) with some plugins installed (they will all be installed after creating the virtual environment). The live documentation site retrieves two type of documentation:
+
+* Static, manually created `*.md` files: these documents are manually created and stored in `/docs` folder.
+* Automatically generated (API): these documents are generated using [`keras-audoc`](https://gabrieldemarmiesse.github.io/keras-autodoc/), which reads inline functions' comments and generates files according to `autogen.py`. (currently not working -visit: https://github.com/keras-team/keras-autodoc/issues/68)
+
+In turn, menu (amongst other things) is defined in `mkdocs.yml` file.
+
+In order to improve documentation you can do the following:
+
+### Editing an existing `.md` file
+
+1. Open the desired `.md` file within `/docs` folder and edit it normally.
+2. Save your changes
+3. Run `mkdocs serve` and watch your changes in `http://127.0.0.1:8000`
+4. Once, you're done editing, press `CTRL-C` to stop the server
+5. If you're happy with your changes, run `mkdocs gh-deploy`: a site will be generated and pushed to `gh-pages` branch within this repo. Soon after it will be visible in the live site.
+
+### Creating a new `.md` file
+
+1. Create a `.md` file within `/docs` folder and edit it normally.
+2. Save your changes
+3. Edit `mkdocs.yml` and add a menu entry pointing to the newly created file.
+4.  Run `mkdocs serve` and watch your changes in `http://127.0.0.1:8000`
+4. Once, you're done editing, press `CTRL-C` to stop the server
+5. If you're happy with your changes, run `mkdocs gh-deploy`: a site will be generated and pushed to `gh-pages` branch within this repo. Soon after it will be visible in the live site.
