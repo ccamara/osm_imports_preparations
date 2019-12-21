@@ -46,6 +46,7 @@ def data_munging(df, file_name):
              'NOM_CATALA',
              'DATA_PLANTACIO',
              'CATEGORIA_ARBRAT',
+             'ALCADA'
              ]]
 
     # Tagging conversion using https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree
@@ -57,6 +58,10 @@ def data_munging(df, file_name):
                             'NOM_CATALA': 'species:ca',
                             'DATA_PLANTACIO': 'planted_date'})
 
+    # Creates genus column
+    df['genus'] = df['species'].str.split().str[0]
+
+
     # Convert columns into categories (R's factors)
     # https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html
     df["species"] = df["species"].astype("category")
@@ -65,12 +70,31 @@ def data_munging(df, file_name):
     # @TODO: Populate leaf_cycle column according to species
     # https://wiki.openstreetmap.org/wiki/Key:leaf_cycle
 
-    # @TODO: convert 'CATEGORIA' into height or diameter, according to city
-    # council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf
+    # Convert 'ALCADA' into height, according to city
+    # council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 22)
+    df["ALCADA"] = df["ALCADA"].astype("category")
+
+    df.loc[df.ALCADA == "PETITA", 'height'] = 5
+    df.loc[df.ALCADA == "MITJANA", 'height'] = 10
+    df.loc[df.ALCADA == "GRAN", 'height'] = 15
+    df.loc[df.ALCADA == "EXEMPLAR", 'height'] = 20
+
+    # Convert 'CATEGORIA' into circumference, according to city
+    # council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 19)
+    df["CATEGORIA_ARBRAT"] = df["CATEGORIA_ARBRAT"].astype("category")
+
+    df.loc[df.CATEGORIA_ARBRAT == "PRIMERA", 'circumference'] = 0.4
+    df.loc[df.CATEGORIA_ARBRAT == "SEGONA", 'circumference'] = 0.8
+    df.loc[df.CATEGORIA_ARBRAT == "TERCERA", 'circumference'] = 1.1
+    df.loc[df.CATEGORIA_ARBRAT == "EXEMPLAR", 'circumference'] = 1.5
+
 
     # @TODO: Tag tree pits for accessibility purposes.
 
     # @TODO: Consider importing city council's IDs for updating purposes.
+
+    # Drop unused intermediate columns.
+    df = df.drop(columns=['CATEGORIA_ARBRAT', 'ALCADA'])
 
     # Create a source column with "Opendata Ajuntament Barcelona"
     df['source'] = "Opendata Ajuntament de Barcelona"
