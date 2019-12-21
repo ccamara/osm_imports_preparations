@@ -40,12 +40,12 @@ Original field  | Description  | OSM tagging  |  Comments
 `TIPUS_ELEMENT`  | Object's type (viari/zona)  |  | Not imported
 `ESPAI VERD`  | Name of Green space where the tree is located   |   | Not imported
 `ADRECA`  | Address  |   | Not imported
-`ALCADA`  | Tree's height. It does not use meters, but categories  | `height`  | height is calculated according to tree's category, following [this documentation](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf) (p. 22).
+`ALCADA`  | Tree's height. It does not use meters, but categories  | `height`  | height is calculated according to this field, following [this documentation](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf) (p. 22).
 `CAT_ESPECIE_ID`  | Species' ID  |   | Not imported
 `NOM_CIENTIFIC`  | scientific name of the species (popularly known as the Latin name)  | `species`  |
 `NOM_CASTELLA`  | Name in Spanish  | `species:es`   |
 `NOM_CATALA`  | Name in Catalan  | `species:ca`  |
-`CATEGORIA_ARBRAT`  | Tree's category. Internal classification according to height and diameter.  | `diameter`  | Not directly imported, but used to calculate `height` and `diameter`, following [this documentation](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf) (p. 19 and 22).
+`CATEGORIA_ARBRAT`  | Tree's category. Internal classification according to height and diameter.  | `circumference`  | Not directly imported, but used to calculate `circumference`, following [this documentation](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf) (p. 19).
 `AMPLADA_VORERA`  | Sidewalk's width  |   | Not imported.
 `DATA_PLANTACIO`  | Date in which the tree was planted  | `planted_date`  |
 `TIPUS_AIGUA`  | Water type  |   | Not imported.
