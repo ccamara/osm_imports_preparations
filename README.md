@@ -1,7 +1,7 @@
 # OpenStreetMap Imports preparations
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -24,6 +24,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://carloscamara.es"><img src="https://avatars1.githubusercontent.com/u/706549?v=4" width="100px;" alt=""/><br /><sub><b>Carlos Cámara</b></sub></a><br /><a href="https://github.com/ccamara/osm_imports_preparations/commits?author=ccamara" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/msevilla00"><img src="https://avatars2.githubusercontent.com/u/1491985?v=4" width="100px;" alt=""/><br /><sub><b>Miguel Sevilla-Callejo</b></sub></a><br /><a href="https://github.com/ccamara/osm_imports_preparations/commits?author=msevilla00" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/gabrieldemarmiesse"><img src="https://avatars1.githubusercontent.com/u/12891691?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel de Marmiesse</b></sub></a><br /><a href="#question-gabrieldemarmiesse" title="Answering Questions">💬</a></td>
   </tr>
 </table>
 
