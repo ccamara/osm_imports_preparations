@@ -49,18 +49,17 @@ def data_munging(df, file_name):
              'ALCADA'
              ]]
 
-    # Tagging conversion using https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree
-    # as a reference
+    # Tagging conversion using natural=Tree OSM wiki as a reference:
+    # https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree
 
-    # Rename
+    # Rename columns
     df = df.rename(columns={'NOM_CIENTIFIC': 'species',
                             'NOM_CASTELLA': 'species:es',
                             'NOM_CATALA': 'species:ca',
                             'DATA_PLANTACIO': 'planted_date'})
 
-    # Creates genus column
+    # Create genus column
     df['genus'] = df['species'].str.split().str[0]
-
 
     # Convert columns into categories (R's factors)
     # https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html
@@ -88,10 +87,9 @@ def data_munging(df, file_name):
     df.loc[df.CATEGORIA_ARBRAT == "TERCERA", 'circumference'] = 1.1
     df.loc[df.CATEGORIA_ARBRAT == "EXEMPLAR", 'circumference'] = 1.5
 
+    # TODO: Tag tree pits for accessibility purposes.
 
-    # @TODO: Tag tree pits for accessibility purposes.
-
-    # @TODO: Consider importing city council's IDs for updating purposes.
+    # TODO: Consider importing city council's IDs for updating purposes.
 
     # Drop unused intermediate columns.
     df = df.drop(columns=['CATEGORIA_ARBRAT', 'ALCADA'])
