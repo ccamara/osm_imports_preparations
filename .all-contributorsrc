@@ -22,6 +22,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "gabrieldemarmiesse",
+      "name": "Gabriel de Marmiesse",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12891691?v=4",
+      "profile": "https://github.com/gabrieldemarmiesse",
+      "contributions": [
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
