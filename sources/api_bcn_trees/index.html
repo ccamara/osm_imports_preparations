@@ -344,15 +344,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
+  <a href="#arguments" class="md-nav__link">
+    Arguments:
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#returns" class="md-nav__link">
-    Returns
+    Returns:
   </a>
   
 </li>
@@ -418,15 +418,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
+  <a href="#arguments" class="md-nav__link">
+    Arguments:
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#returns" class="md-nav__link">
-    Returns
+    Returns:
   </a>
   
 </li>
@@ -465,15 +465,16 @@
 <p>Cleans and prepares data from Barcelona City Council Opendata
 for importing trees' information into OSM, provided a dataframe.
 Stores the resulting dataframe into a csv file.</p>
-<p>Tagging conversion has been made following <a href="https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree">Tag:natural=tree</a> in OSM Wiki.</p>
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<p>df : DataFrame
+<p>Tagging conversion has been made following <code>Tag:natural=tree &lt;https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree&gt;</code>_ in OSM Wiki.</p>
+<h2 id="arguments">Arguments:<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<p><code>df</code>: DataFrame
 The Raw Dataframe we want to use import into OSM.</p>
-<p>file_name : String
+<p><code>file_name</code>: String
 The name we want to give to the resulting csv export.</p>
-<h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
-<p>df
-A clean dataframe, ready for importing to OSM.</p>
+<h2 id="returns">Returns:<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h2>
+<p><code>df</code>: A clean dataframe, ready for importing to OSM.</p>
+<p><code>csv file</code>, stored in <code>/data/processed</code> folder and named after
+<code>file_name</code></p>
 <hr />
                 
                   
