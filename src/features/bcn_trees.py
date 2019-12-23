@@ -2,6 +2,10 @@
 
 This script is aimed to define all functions required to import data regarding
 trees from Barcelona's OpenData portal.
+
+  Typical usage example:
+
+  df = bcn_trees.data_muning()
 """
 
 
@@ -18,21 +22,24 @@ def data_munging(df, file_name):
     for importing trees' information into OSM, provided a dataframe.
     Stores the resulting dataframe into a csv file.
 
-    Tagging conversion has been made following [Tag:natural=tree](https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree) in OSM Wiki.
+    Tagging conversion has been made following `Tag:natural=tree <https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree>`_ in OSM Wiki.
 
-    Parameters
-    ----------
-    df : DataFrame
-        The Raw Dataframe we want to use import into OSM.
+    Arguments:
+    ---------
 
-    file_name : String
-        The name we want to give to the resulting csv export.
+        ``df``: DataFrame
+            The Raw Dataframe we want to use import into OSM.
 
+        ``file_name``: String
+            The name we want to give to the resulting csv export.
 
-    Returns
-    -------
-    df
-        A clean dataframe, ready for importing to OSM.
+    Returns:
+    --------
+
+        ``df``: A clean dataframe, ready for importing to OSM.
+
+        ``csv file``, stored in ``/data/processed`` folder and named after
+        ``file_name``
 
     """
 
