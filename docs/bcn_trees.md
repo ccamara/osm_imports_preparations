@@ -26,7 +26,7 @@ This import will be done manually, using JOSM to edit the data. Consider using T
 
 ## Data preparations
 
-All data preparations will be made automatically by the scripts within this repository. More specifically from `import_bcn_trees.py`, which in turn imports the functions defined in `src/features/bcn_trees.py` aimed to convert original tagging into OSM tagging (for a complete documentation of those functions, please refer to the [API Documentation]()).
+All data preparations will be made automatically by the scripts within this repository. More specifically from `import_bcn_trees.py`, which in turn imports the functions defined in `src/features/bcn_trees.py` aimed to convert original tagging into OSM tagging (for a complete documentation of those functions, please refer to the [API Documentation](/sources/api_bcn_trees/)).
 
 Tagging Conversion table:
 
