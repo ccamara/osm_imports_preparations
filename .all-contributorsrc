@@ -31,11 +31,20 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "alejandroscf",
+      "name": "Alejandro Suarez",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3200102?v=4",
+      "profile": "https://github.com/alejandroscf",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "osm_imports_preparations",
-  "projectOwner": "ccamara",
+  "projectOwner": "mapcolabora",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
