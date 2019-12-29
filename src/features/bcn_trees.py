@@ -46,15 +46,15 @@ def data_munging(df, file_name):
     print('Preparing dataframe...')
 
     # Select columns.
-    df = df[['CODI',
-             'LATITUD_WGS84',
+    df = df[['LATITUD_WGS84',
              'LONGITUD_WGS84',
              'NOM_CIENTIFIC',
              'NOM_CASTELLA',
              'NOM_CATALA',
              'DATA_PLANTACIO',
              'CATEGORIA_ARBRAT',
-             'ALCADA'
+             'ALCADA',
+             'CODI'
              ]]
 
     # Tagging conversion using natural=Tree OSM wiki as a reference:

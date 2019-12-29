@@ -26,13 +26,13 @@ This import will be done manually, using JOSM to edit the data. Consider using T
 
 ## Data preparations
 
-All data preparations will be made automatically by the scripts within this repository. More specifically from `import_bcn_trees.py`, which in turn imports the functions defined in `src/features/bcn_trees.py` aimed to convert original tagging into OSM tagging (for a complete documentation of those functions, please refer to the [API Documentation](/sources/api_bcn_trees/)).
+All data preparations will be made automatically by the scripts within this repository. More specifically from `[import_bcn_trees.py](https://github.com/mapcolabora/osm_imports_preparations/blob/master/import_bcn_trees.py)`, which in turn imports the functions defined in `[src/features/bcn_trees.py](https://github.com/mapcolabora/osm_imports_preparations/blob/master/src/features/bcn_trees.py)` aimed to convert original tagging into OSM tagging (for a complete documentation of those functions, please refer to the [API Documentation](/sources/api_bcn_trees/)).
 
 Tagging Conversion table:
 
 Original field  | Description  | OSM tagging  |  Comments
 ----------------|--------------|--------------|------------
-`CODI` | Internal ID  | source:pkey  | Primary Key, tagging as proposed in [Osmsync's Wiki page](https://wiki.openstreetmap.org/wiki/Osmsync).
+`CODI` | Internal ID  | `source:pkey`  | Primary Key, tagging as proposed in [Osmsync's Wiki page](https://wiki.openstreetmap.org/wiki/Osmsync).
 `X_ETRS89`  | X coordinates, ETRS89 format  | | Not imported
 `Y_ETRS89`  | Y coordinates, ETRS89 format  | | Not imported
 `LATITUD_WGS84`  | Latitude coordinates, WGS84 format  |   | Geometry information. No tagging used.
