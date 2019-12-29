@@ -32,7 +32,7 @@ Tagging Conversion table:
 
 Original field  | Description  | OSM tagging  |  Comments
 ----------------|--------------|--------------|------------
-`CODI` | Internal ID  | Not currently imported  | Consider importing it, as it may be useful for future data updates.
+`CODI` | Internal ID  | source:pkey  | Primary Key, tagging as proposed in [Osmsync's Wiki page](https://wiki.openstreetmap.org/wiki/Osmsync).
 `X_ETRS89`  | X coordinates, ETRS89 format  | | Not imported
 `Y_ETRS89`  | Y coordinates, ETRS89 format  | | Not imported
 `LATITUD_WGS84`  | Latitude coordinates, WGS84 format  |   | Geometry information. No tagging used.

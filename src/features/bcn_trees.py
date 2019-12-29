@@ -43,10 +43,11 @@ def data_munging(df, file_name):
 
     """
 
-    print('Loading dataframe...')
+    print('Preparing dataframe...')
 
     # Select columns.
-    df = df[['LATITUD_WGS84',
+    df = df[['CODI',
+             'LATITUD_WGS84',
              'LONGITUD_WGS84',
              'NOM_CIENTIFIC',
              'NOM_CASTELLA',
@@ -60,10 +61,14 @@ def data_munging(df, file_name):
     # https://wiki.openstreetmap.org/wiki/Tag:natural%3Dtree
 
     # Rename columns
-    df = df.rename(columns={'NOM_CIENTIFIC': 'species',
+    df = df.rename(columns={'LATITUD_WGS84': 'latitude',
+                            'LONGITUD_WGS84': 'longitude',
+                            'NOM_CIENTIFIC': 'species',
                             'NOM_CASTELLA': 'species:es',
                             'NOM_CATALA': 'species:ca',
-                            'DATA_PLANTACIO': 'planted_date'})
+                            'DATA_PLANTACIO': 'planted_date',
+                            'CODI': 'source:pkey'
+                            })
 
     # Create genus column
     df['genus'] = df['species'].str.split().str[0]
@@ -73,11 +78,11 @@ def data_munging(df, file_name):
     df["species"] = df["species"].astype("category")
     df["species:ca"] = df["species:ca"].astype("category")
 
-    # @TODO: Populate leaf_cycle column according to species
+    # TODO: Populate leaf_cycle column according to species
     # https://wiki.openstreetmap.org/wiki/Key:leaf_cycle
 
-    # Convert 'ALCADA' into height, according to city
-    # council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 22)
+    # Convert 'ALCADA' into height, according to city council's guide:
+    # https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 22)
     df["ALCADA"] = df["ALCADA"].astype("category")
 
     df.loc[df.ALCADA == "PETITA", 'height'] = 5
@@ -85,8 +90,8 @@ def data_munging(df, file_name):
     df.loc[df.ALCADA == "GRAN", 'height'] = 15
     df.loc[df.ALCADA == "EXEMPLAR", 'height'] = 20
 
-    # Convert 'CATEGORIA' into circumference, according to city
-    # council's guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 19)
+    # Convert 'CATEGORIA' into circumference, according to city council's
+    # guide: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Plagestioarbratviaribcn_cat.pdf (p. 19)
     df["CATEGORIA_ARBRAT"] = df["CATEGORIA_ARBRAT"].astype("category")
 
     df.loc[df.CATEGORIA_ARBRAT == "PRIMERA", 'circumference'] = 0.4
@@ -96,13 +101,13 @@ def data_munging(df, file_name):
 
     # TODO: Tag tree pits for accessibility purposes.
 
-    # TODO: Consider importing city council's IDs for updating purposes.
-
     # Drop unused intermediate columns.
     df = df.drop(columns=['CATEGORIA_ARBRAT', 'ALCADA'])
 
     # Create a source column with "Opendata Ajuntament Barcelona"
     df['source'] = "Opendata Ajuntament de Barcelona"
+
+    print('Dataframe created. Saving it into a CSV file...')
 
     df.to_csv('data/processed/' + file_name + '.csv', sep='\t',
               encoding='utf-8')
