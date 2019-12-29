@@ -1,9 +1,8 @@
 # OpenStreetMap Imports preparations
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2bb3d16a-91a8-41a1-b0bd-6e9fc9bb42bc/deploy-status)](https://app.netlify.com/sites/osmimports/deploys)  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 This is a proof of concept and a pet project for learning python while preparing data for importing it to [OpenStreetMap](https://openstreetmap.org). Although I will start small (importing trees from Barcelona city council), I aim to set the foundations for adding other types of imports that may (or may not) be added in the future, hopefully with other people's contributions.
 
