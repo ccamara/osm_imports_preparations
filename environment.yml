@@ -8,6 +8,7 @@ dependencies:
   - pandas
   - pip
   - spyder
+  - spyder-notebook
   - python-wget
   - pip:
       - keras-autodoc
