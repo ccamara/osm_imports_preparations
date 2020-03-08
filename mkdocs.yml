@@ -13,11 +13,15 @@ theme:
     primary: 'green'
     accent: 'red'
 
+extra_css:
+    - extra.css
+
 nav:
     - Home: index.md
     - Project Setup: setup.md
     - Imports Documentation:
-        - Barcelona's Trees Import: bcn_trees.md
+        - Barcelona's Trees Import: import_bcn_trees.ipynb
+        # - Barcelona's Trees Import: bcn_trees.md
     - API:
         - OSMI Helpers: sources/osmi_helpers.md
     - Bug Tracker: https://github.com/mapcolabora/osm_imports_preparations/issues
@@ -26,3 +30,8 @@ nav:
 markdown_extensions:
     - toc:
         permalink: true
+
+plugins:
+  - mknotebooks:
+        enable_default_jupyter_cell_styling: false
+        enable_default_pandas_dataframe_styling: true

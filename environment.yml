@@ -14,4 +14,5 @@ dependencies:
   - pip:
       - keras-autodoc
       - mkdocs-material
+      - mknotebooks
 
