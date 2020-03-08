@@ -14,7 +14,7 @@ theme:
     accent: 'red'
 
 extra_css:
-    - extra.css
+    - css/extra.css
 
 nav:
     - Home: index.md
