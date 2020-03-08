@@ -39,4 +39,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 * Import script + documentation in a Jupyter notebook for easier supervision.
 * Just one jupyter notebook for imports.
 * Fields' mapping through a simple CSV file (currently only works for CSV files)
-* Documented process (still very basic)
+* Documented process (still very basic, but you can help to improve it!)
