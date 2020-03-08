@@ -2,15 +2,13 @@
 
 from keras_autodoc import DocumentationGenerator
 
-from src.features import bcn_trees
-
+from osmi_helpers import data_gathering
 
 pages = {
-    'api_bcn_trees.md': [
-        'src.features.bcn_trees.data_download',
-        'src.features.bcn_trees.data_munging'
+    'osmi_helpers.md': [
+        'osmi_helpers.data_gathering.csv_parser'
     ]
 }
 
 doc_generator = DocumentationGenerator(pages)
-doc_generator.generate('./sources')
+doc_generator.generate('./docs/sources')

@@ -19,7 +19,7 @@ nav:
     - Imports Documentation:
         - Barcelona's Trees Import: bcn_trees.md
     - API:
-        - API bcn_tres: sources/api_bcn_trees.md
+        - OSMI Helpers: sources/osmi_helpers.md
     - Bug Tracker: https://github.com/mapcolabora/osm_imports_preparations/issues
 
 
