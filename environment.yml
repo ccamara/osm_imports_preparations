@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - geopandas
+  - markdown >= 3.2.1
   - mkdocs
   - pandas
   - pip
