@@ -9,6 +9,7 @@ dependencies:
   - mkdocs
   - pandas
   - pip
+  - pygments
   - spyder
   - spyder-notebook
   - python-wget
