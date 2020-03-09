@@ -1,5 +1,4 @@
 keras-autodoc==0.4.1
-Pygments==2.3.1
 Markdown==3.2.1
 mkdocs==1.1
 mkdocs-material==4.6.3
