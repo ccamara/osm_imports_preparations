@@ -41,6 +41,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "JordiMFimport",
+      "name": "JordiMFimport",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/46328523?v=4",
+      "profile": "https://github.com/JordiMFimport",
+      "contributions": [
+        "userTesting"
+      ]
     }
   ],
   "contributorsPerLine": 7,
