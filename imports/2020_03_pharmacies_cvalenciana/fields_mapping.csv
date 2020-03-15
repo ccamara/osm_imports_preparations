@@ -2,7 +2,7 @@ Original field,Description,OSM tagging,Comments
 ESTABLECIMIENTO,Internal ID,source:pkey,
 PROVINCIA,Province,addr:province,
 MUNICIPIO,Municipality,addr:city,
-TITULAR,,name,
+TITULAR,,operator,
 DIRECCIÓN,Address,addr:full,"Full address, to be splitted into `adr:street` and `adr:num`"
 DEPARTAMENTO DE SALUD,,,Not imported
 ZONA ZBS,,,Not imported
