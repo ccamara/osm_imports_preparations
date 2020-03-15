@@ -1,7 +1,7 @@
 # OpenStreetMap Imports preparations
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2bb3d16a-91a8-41a1-b0bd-6e9fc9bb42bc/deploy-status)](https://app.netlify.com/sites/osmimports/deploys)  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is a proof of concept and a pet project for learning python while preparing data for importing it to [OpenStreetMap](https://openstreetmap.org). Although I will start small (importing trees from Barcelona city council), I aim to set the foundations for adding other types of imports that may (or may not) be added in the future, hopefully with other people's contributions.
@@ -25,6 +25,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/msevilla00"><img src="https://avatars2.githubusercontent.com/u/1491985?v=4" width="100px;" alt=""/><br /><sub><b>Miguel Sevilla-Callejo</b></sub></a><br /><a href="https://github.com/mapcolabora/osm_imports_preparations/commits?author=msevilla00" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/gabrieldemarmiesse"><img src="https://avatars1.githubusercontent.com/u/12891691?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel de Marmiesse</b></sub></a><br /><a href="#question-gabrieldemarmiesse" title="Answering Questions">💬</a></td>
     <td align="center"><a href="https://github.com/alejandroscf"><img src="https://avatars3.githubusercontent.com/u/3200102?v=4" width="100px;" alt=""/><br /><sub><b>Alejandro Suarez</b></sub></a><br /><a href="#maintenance-alejandroscf" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/JordiMFimport"><img src="https://avatars0.githubusercontent.com/u/46328523?v=4" width="100px;" alt=""/><br /><sub><b>JordiMFimport</b></sub></a><br /><a href="#userTesting-JordiMFimport" title="User Testing">📓</a></td>
   </tr>
 </table>
 
