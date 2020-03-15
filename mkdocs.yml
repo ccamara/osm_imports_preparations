@@ -21,6 +21,7 @@ nav:
     - Project Setup: setup.md
     - Imports Documentation:
         - Barcelona's Trees Import: import_bcn_trees.ipynb
+        - Comunitat Valenciana's Pharmacies: pharmacies_cval.ipynb
         # - Barcelona's Trees Import: bcn_trees.md
     - API:
         - OSMI Helpers: sources/osmi_helpers.md
