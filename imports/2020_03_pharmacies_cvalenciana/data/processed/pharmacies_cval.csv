@@ -1,0 +1,3 @@
+source:pkey,addr:province,addr:city,name,addr:full,source,amenity,addr_full,gcode,lat,lon,geometry
+A-164-F,ALICANTE,AGOST,Carlos Gisbert Arques,"PLAZA DE ESPAÑA, 19, 03698",Opendata Generalitat Valenciana,pharmacy,"PLAZA DE ESPAÑA, 19, 03698,AGOST","Plaza de Agustín González Martínez, 19270, Atienza, Castile-La Mancha, Spain",41.1990888,-2.8688911,POINT (-2.8688911 41.1990888)
+A-13-F,ALICANTE,ALBATERA,Isabel Balsameda Morales,"CALLE Ramon y Cajal, 6, 03340",Opendata Generalitat Valenciana,pharmacy,"CALLE Ramon y Cajal, 6, 03340,ALBATERA","Calle Ramón y Cajal, 03340, Albatera, Valencian Community, Spain",38.178085,-0.8698619,POINT (-0.8698619 38.178085)
