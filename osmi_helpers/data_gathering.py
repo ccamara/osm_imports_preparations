@@ -68,3 +68,20 @@ def csv_parser(df, mapping_csv):
     df = df.rename(columns=parsing_dict)
 
     return(df)
+
+
+def test_function(parameter):
+    """
+    This is a sample test function for testing documentation purposes.
+
+    Parameters
+    ----------
+    parameter : TYPE
+        This is some text here describing the `parameter`.
+
+    Returns
+    -------
+    parameter.
+
+    """
+    return(parameter)

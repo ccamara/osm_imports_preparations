@@ -37,3 +37,8 @@ plugins:
   - mknotebooks:
         enable_default_jupyter_cell_styling: false
         enable_default_pandas_dataframe_styling: true
+  - mktheapidocs:
+      modules:
+        osmi_helpers.data_gathering:
+          section:custom
+          source_repo:osmi_helpers/data_gathering.py

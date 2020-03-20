@@ -18,4 +18,5 @@ dependencies:
       - keras-autodoc
       - mkdocs-material
       - mknotebooks
+      - mktheapidocs[plugin]
 
