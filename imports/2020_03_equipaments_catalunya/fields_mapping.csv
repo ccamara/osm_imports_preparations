@@ -1,0 +1,24 @@
+Original field,Description,OSM tagging,Comments
+idequipament,Identificador intern de l'equipament a BDE,source:pkey,Not imported.
+alies,Àlies de l'equipament,,Not imported. Same values as `nom`
+nom,Nom de l'eqiupament,name,
+categoria,Categories / subcategories de l'equipament,tmp_category,Not imported. Only used for filtering. Will be dropped after import.
+tipus_via,Tipus de via (adreça),,
+via,Nom de la via (adreça),addr:street,
+sufix_via,Sufix (adreça),,Empty. Not imported.
+num,Número de portal (adreça),addr:housenumber,
+cpostal,Codi postal,addr:postcode,
+poblacio,Població,addr:city,
+comarca,Comarca,,Not imported
+telefon1,Telèfon principal,phone,
+telefon2,Telèfon secundari,,
+fax,Fax,fax,
+utmx,Coordenada x (UTM),,Not imported as tags
+utmy,Coordenada y (UTM),,Not imported as tags
+longitud,Longitud,,Not imported as tags
+latitud,Latitud,,Not imported as tags
+email,Adreça de correu electrònic,email,
+web,Pàgina web,website,
+data_modificacio,Data de la darrera modificació,source:date,
+propietats,Propietats addicionals de l'equipament,,Not imported
+localitzacio,Columna de georeferència,,Not imported as tags
